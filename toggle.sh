@@ -1,6 +1,6 @@
 
 
-if [$1 -eq 'a']
+if [[$1 == 'a']]
 then
     rm /etc/nginx/nginx.conf
     cp nginx.a.conf /etc/nginx/nginx.conf
@@ -8,7 +8,7 @@ then
     echo 'Deployed option A'
 fi
 
-if [$1 -eq 'b']
+if [[$1 == 'b']]
 then
     rm /etc/nginx/nginx.conf
     cp nginx.b.conf /etc/nginx/nginx.conf
@@ -16,7 +16,7 @@ then
     echo 'Deployed option B'
 fi
 
-if [$1 -eq 'c']
+if [[$1 == 'c']]
 then
     rm /etc/nginx/nginx.conf
     cp nginx.c.conf /etc/nginx/nginx.conf
