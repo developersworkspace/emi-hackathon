@@ -1,25 +1,25 @@
 
 
-if [[$1 == 'a']]
+if [ $1 == 'a' ]
 then
-    rm /etc/nginx/nginx.conf
-    cp nginx.a.conf /etc/nginx/nginx.conf
+    sudo rm /etc/nginx/nginx.conf
+    sudo cp nginx.a.conf /etc/nginx/nginx.conf
     sudo service nginx reload
     echo 'Deployed option A'
 fi
 
-if [[$1 == 'b']]
+if [ $1 == 'b' ]
 then
-    rm /etc/nginx/nginx.conf
-    cp nginx.b.conf /etc/nginx/nginx.conf
+    sudo rm /etc/nginx/nginx.conf
+    sudo cp nginx.b.conf /etc/nginx/nginx.conf
     sudo service nginx reload
     echo 'Deployed option B'
 fi
 
-if [[$1 == 'c']]
+if [ $1 == 'c' ]
 then
-    rm /etc/nginx/nginx.conf
-    cp nginx.c.conf /etc/nginx/nginx.conf
+    sudo rm /etc/nginx/nginx.conf
+    sudo cp nginx.c.conf /etc/nginx/nginx.conf
     sudo service nginx reload
     echo 'Deployed option C'
 fi
